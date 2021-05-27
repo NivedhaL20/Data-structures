@@ -4,7 +4,7 @@ namespace BinarySearch
 {
     public class Program
     {
-        public static int binarySearch(int[] arr, int l,
+        public static int BinarySearch(int[] arr, int l,
                             int r, int x)
         {
             if (r >= l)
@@ -15,9 +15,9 @@ namespace BinarySearch
                     return mid;
 
                 if (arr[mid] > x)
-                    return binarySearch(arr, l, mid - 1, x);
+                    return BinarySearch(arr, l, mid - 1, x);
 
-                return binarySearch(arr, mid + 1, r, x);
+                return BinarySearch(arr, mid + 1, r, x);
             }
             return -1;
         }
@@ -33,7 +33,7 @@ namespace BinarySearch
             int x = 3;
 
             //Array index starts with 0
-            int result = binarySearch(arr, 0, n - 1, x);
+            int result = BinarySearch(arr, 0, n - 1, x);
 
             if (result == -1)
                 Console.WriteLine("Element not present");            

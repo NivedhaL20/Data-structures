@@ -13,7 +13,7 @@ namespace UnitTest
             int n = array.Length;
             int elementToFind = 10; // element is not present in array
             
-            int index = Program.binarySearch(array, 0, n - 1, elementToFind);
+            int index = Program.BinarySearch(array, 0, n - 1, elementToFind);
             Assert.AreEqual(-1, index);
         }
 
@@ -24,7 +24,7 @@ namespace UnitTest
             int n = array.Length;
             int elementToFind = 3; //array[2]
             
-            int index = Program.binarySearch(array, 0, n - 1, elementToFind);
+            int index = Program.BinarySearch(array, 0, n - 1, elementToFind);
             Assert.AreEqual(2, index);
         }
 
@@ -35,7 +35,7 @@ namespace UnitTest
             int n = array.Length;
             int elementToFind = 1; // array[0]
             
-            int index = Program.binarySearch(array, 0, n - 1, elementToFind);
+            int index = Program.BinarySearch(array, 0, n - 1, elementToFind);
             Assert.AreEqual(0, index);
         }
 
@@ -46,7 +46,7 @@ namespace UnitTest
             int n = array.Length;
             int elementToFind = 5; // array[4]
            
-            int index = Program.binarySearch(array, 0, n - 1, elementToFind);
+            int index = Program.BinarySearch(array, 0, n - 1, elementToFind);
             Assert.AreEqual(4, index);
         }
     }

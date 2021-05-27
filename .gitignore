@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BinarySearch/bin/Debug/netcoreapp3.1
+/BinarySearch/obj
+/BubbleSort/bin/Debug/netcoreapp3.1
+/BubbleSort/obj
+/UnitTest/bin/Debug/netcoreapp3.1
+/UnitTest/obj
+/.vs/BinarySearch
+/.vs/DataStructures
